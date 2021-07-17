@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Confirmation</title>
+	<script type="text/javascript">
+		function check()
+		{
+			var email1= document.getElementById('email_addr');
+			var email2=document.getElementById('email_con');
+			if (email1.value != email2.value) {
+				alert("Email must match");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label>Email id<input type="email" id="email_addr" name="email1" value="me@me.com" required=""></label><br>
+		<label>Confirm Email<input type="email" id="email_con" name="email2" required="" onchange="return check()"></label><br>
+		<input type="submit" name="" onclick=" return check();">
+	</form>
+
+</body>
+</html>

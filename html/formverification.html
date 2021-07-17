@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form verification</title>
+	<script src="C:\Users\Kalp\Desktop\web development\js\formverification.js"></script>
+</head>
+<body>
+	<form action="http://www.intro-webdesign.com" method = "GET">
+		<fieldset>
+			<legend>Form verificition</legend>
+
+			<label>First name:<input type="text" id="Fname" name="Fname" required=""></label><br>
+
+			<label>Last name:<input type="text" id="Lname" name="Lname" required=""></label><br>
+
+			<label>Nickname ? <input type="checkbox" id="yesnick" name="yesnick" value="yes" onchange="nicknamechange()"></label><br>
+
+				<div id="nick" style="display: none;">
+					<label>Nickname : <input type="text" name="nickname" id="nickname"></label><br>
+				</div>
+			<input type="submit" name="Verify">
+		</fieldset>
+	</form>
+
+</body>
+</html>
